@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>MAIN - NJSJ｜ST＊HP</title>
+</head>
+<!-- ここまで設定 -->
+<body>
+    <div id="is-loading">
+        <div id="loading" class="dot-font">
+            <p class="big-text">NOW LOADING…</p>
+            <img src="../img/loading-anime.gif" />
+            <p>（画像を読み込んでいます）</p>
+        </div>
+    </div>
+
+    <header class="top-menu">
+        <div class="container">
+            <div id="logo" class="logo">
+                <img src="../img/STHPlogo.png">
+            </div>
+            <!-- ↓　ハンバーガーメニュー（外観）　↓ -->
+                <span class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        <!-- ↓ナビゲーション↓ -->
+        <nav class="menu">
+            <div class="menu_wrap dot-font">
+                <ul class="nav">
+                    <li>
+                        <a href="../top.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Main</a>
+                        <ul class="genre">
+                            <li>
+                                <a href="SDR2.html">SDR2</a>
+                            </li>
+                            <li>
+                                <a href="FF.html">FF</a>
+                            </li>
+                            <li>
+                                <a href="#">NJSJ</a>
+                            </li>
+                            <li>
+                                <a href="ETC.html">ETC</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../link.html">Link</a>
+                    </li>
+                    <li>
+                        <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+                    </li>
+                </ul>   
+            </div>
+        </nav>
+    </header>
+    <!-- ここまでヘッダー --> 
+    <main>
+        <div class="PTcover">
+            <canvas class="particle center" width="1000" height="300" id="myCanvas"></canvas>
+        </div>
+
+        <section class="mainP-top center">
+            <h2 class="palette">Main</h2>
+            <div class="topEfilter"></div>
+            <div class="wd-flame">
+                <div class="main-topE">
+                    <img src="../img/mainPtopE/fwgs-sticker.jpg">
+                </div>
+                <div class="mainP-menu">
+                    <div class="move-bar">
+                        <div class="font-scroll">
+                            <span class="dot-font">NJSJ - Various Livers Fanart</span>
+                        </div>
+                    </div>
+                    <img class="seekbar" src="../img/seekbar-NJSJ.png">
+                    <div class="genre-list container dot-font">
+                        <a class="genre1" href="SDR2.html">SDR2</a>
+                        <a class="genre2" href="FF.html">FF</a>
+                        <a class="genre3" href="#">NJSJ</a>
+                        <a class="genre4" href="ETC.html">ETC</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pict-list">
+            <div class="center">
+                <div class="wd-top">
+                    <h3>三枝明那関連</h3>
+                </div>
+                <div class="wd-bottom">
+                    <p>大体時系列順（右下に向かうほど新しい）</p>
+                    <h4>明那単体</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="akina-content-01">
+                            <img src="../pict/NJSJ/akina/thumb/majiuta.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="akina-content-02">
+                            <img src="../pict/NJSJ/akina/thumb/akina4th.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="akina-content-03">
+                            <img src="../pict/NJSJ/akina/thumb/akina_pf.png">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="akina-content-04">
+                            <img src="../pict/NJSJ/akina/thumb/akeome-akina2024.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="akina-content-05">
+                            <img src="../pict/NJSJ/akina/thumb/chekina.png">
+                        </a>
+                    </div>
+                    <h4>ふわぐさ</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="fwgs-content-01">
+                            <img src="../pict/NJSJ/thumb/fwgs-sticker.jpg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="fwgs-content-02">
+                            <img src="../pict/NJSJ/thumb/suika-fwgs.jpeg">
+                        </a>
+                    </div>
+                    <h4>メッシャーズ</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="mesha-content-01">
+                            <img src="../pict/NJSJ/thumb/mesya.png">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="mesha-content-02">
+                            <img src="../pict/NJSJ/thumb/mesha_mascot.png">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="mesha-content-03">
+                            <img src="../pict/NJSJ/thumb/asamesha.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- 明那の単体絵 -->
+            <div id="akina-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>明那のマジウタ</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/akina/majiuta.jpeg">
+                    <div class="explain">
+                        <p>明那が本気で歌うマジウタ配信はいいぞ！<br>聴いた後に勢いで描いたやつでした</p>
+                    </div>
+                </div>
+            </div>
+            <div id="akina-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>４周年おめでとう絵</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/akina/akina4th.jpeg">
+                    <div class="explain">
+                        <p>４周年ということで<br>明那の好きなところや軌跡のようなモチーフを敷き詰めました</p>
+                    </div>
+                </div>
+            </div>
+            <div id="akina-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>2色明那＋フワクル</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/akina/akina_pf.png">
+                    <div class="explain">
+                        <p>地元のイベントに出た時のサークルカットに使用した絵</p>
+                    </div>
+                </div>
+            </div>
+            <div id="akina-content-04" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>あけおめ和服衣装2024</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/akina/akeome-akina2024.jpeg">
+                    <div class="explain">
+                        <p>正月なので和服衣装を描いてみたかった絵</p>
+                    </div>
+                </div>
+            </div>
+            <div id="akina-content-05" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>チェキ風明那</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/akina/chekina.png">
+                    <div class="explain">
+                        <p>巷で流行りのカードケースデコをしてみたくて、<br>自分でチェキっぽいのを用意した時の絵</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ふわぐさの絵 -->
+            <div id="fwgs-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ふわぐさと猫</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/NJSJ/fwgs-sticker.jpg">
+                        <img src="../pict/NJSJ/sticker-pre.png">
+                    </div>
+                    <div class="explain">
+                        <p>猫を飼っている二人の絵<br>地元のイベントで頒布したステッカーの絵でもある<br>（２枚目は試作品）</p>
+                    </div>
+                </div>
+            </div>
+            <div id="fwgs-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>緊急配信</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/suika-fwgs.jpeg">
+                    <div class="explain">
+                        <p>ふわぐさがｽｲｶｹﾞｰﾑの対戦配信を緊急で回していた時の絵</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 飯屋の絵 -->
+            <div id="mesha-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>#飯屋WIN</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/mesya.png">
+                    <div class="explain">
+                        <p>アペクス大会に出た飯屋を応援してた時の絵<br>３人でわいわいと、コツコツ練習してたのが良かった</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mesha-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>マスコッツ</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/mesha_mascot.png">
+                    <div class="explain">
+                        <p>メシャの原点（？）の<br>フォトショ使いたての頃に試し書きしたやつでもある</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mesha-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>朝メシャ配信</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/asamesha.png">
+                    <div class="explain">
+                        <p>リアタイ直後にこの配信の好きなとこを描いたやつ<br>この３人は話題が尽きず、聞いててほんとに楽しいんだ</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="center">
+                <div class="wd-top">
+                    <h3>色んなライバー</h3>
+                </div>
+                <div class="wd-bottom">
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="etc-content-01">
+                            <img src="../pict/NJSJ/etcLiver/thumb/roko2023.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- その他のライバーの単体絵 -->
+            <div id="etc-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ろこちゃん誕生日2023</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/NJSJ/etcLiver/roko2023.jpg">
+                    <div class="explain">
+                        <p>誕生日同じだったり何かと縁を感じます</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="center">
+                <div class="wd-top">
+                    <h3>LOG</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>らくがき</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="rough-content-01">□</a>
+                    </div>
+
+                    <h4>アナログ</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="analog-content-01">□</a>
+                        <a class="modal-syncer button-link" data-target="analog-content-02">□</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- らくがきログ -->
+            <div id="rough-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>明那関連らくがき（'20〜'23）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/NJSJ/rakugaki/mesha.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/4gusa.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/atunuri-akina.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/fuwa-atunuri.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/akina-senga-ganbatta.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/Halloween-akina.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/syukujituni.jpeg">
+                        <img src="../pict/NJSJ/rakugaki/egolock1000man.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>明那やらメシャやら色々らくがきしてた<br>何気にこの絵の中で板タブ、スマホ、iPadとデバイスがころころ変遷してたり</p>
+                    </div>
+                </div>
+            </div>
+            <!-- アナログのログ -->
+            <div id="analog-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>明那関連アナログ（'20〜'23）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/NJSJ/analog/Akanren/akina.jpeg">
+                        <img src="../pict/NJSJ/analog/Akanren/masyumaro-akina.jpeg">
+                        <img src="../pict/NJSJ/analog/Akanren/space-akina.jpeg">
+                        <img src="../pict/NJSJ/analog/Akanren/panikkuqube.jpeg">
+                        <img src="../pict/NJSJ/analog/Akanren/newdefo.jpg">
+                        <img src="../pict/NJSJ/analog/Akanren/sundaydrow.jpeg">
+                        <img src="../pict/NJSJ/analog/Akanren/ballpen-akina.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>紙によく描いてた頃の<br>結構前に描いたと思うんだけどそういえば24年現在も3.0アプデの音沙汰なしですね……あれ…</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="analog-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>アナログ絵（色んなライバー）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/NJSJ/analog/various/tojiro.jpeg">
+                        <img src="../pict/NJSJ/analog/various/si-si.jpeg">
+                        <img src="../pict/NJSJ/analog/various/gakkun.jpeg">
+                        <img src="../pict/NJSJ/analog/various/2kisei.jpeg">
+                        <img src="../pict/NJSJ/analog/various/ngo-debi.jpeg">
+                        <img src="../pict/NJSJ/analog/various/sayo-roki-toko.jpeg">
+                        <img src="../pict/NJSJ/analog/various/mashiro.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>明那メシャ以外も色々描いてた<br>もっと色々好きなライバー描きたいと頭では思ってるんですがなかなか</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="center">
+            <div class="FT-nav container">
+                <a href="../top.html">TOP</a>
+                <a href="../about.html">ABOUT</a>
+                <a href="../link.html">LINK</a>
+                <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+            </div>
+            <div class="FT-main-nav container">
+                <p>MAIN▶︎</p>
+                <div>
+                    <a href="SDR2.html">SDR2</a>
+                    <a href="FF.html">FF</a>
+                    <a href="#">NJSJ</a>
+                    <a href="ETC.html">ETC</a>
+                </div>
+            </div>
+            <div class="FT-last container">
+                <p class="copyright">Copyright© 2024 onom All rights reserved.</p>
+                <a class="FT-escape" href="../index.html">
+                    <div class="shine"></div>
+                    <img src="../img/banner/exit.png">
+                </a>    
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="mainP.js"></script>
+<!-- ▼パーティクルライブラリ -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script>
+
+</body>
+</html>

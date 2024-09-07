@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>MAIN - SDR2｜ST＊HP</title>
+</head>
+<!-- ここまで設定 -->
+<body>
+    <div id="is-loading">
+        <div id="loading" class="dot-font">
+            <p class="big-text">NOW LOADING…</p>
+            <img src="../img/loading-anime.gif" />
+            <p>（画像を読み込んでいます）</p>
+        </div>
+    </div>
+<div id="loading-wrapper">
+    <header class="top-menu">
+        <div class="container">
+            <div id="logo" class="logo">
+                <img src="../img/STHPlogo.png">
+            </div>
+            <!-- ↓　ハンバーガーメニュー（外観）　↓ -->
+                <span class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        <!-- ↓ナビゲーション↓ -->
+        <nav class="menu">
+            <div class="menu_wrap dot-font">
+                <ul class="nav">
+                    <li>
+                        <a href="../top.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Main</a>
+                        <ul class="genre">
+                            <li>
+                                <a href="#">SDR2</a>
+                            </li>
+                            <li>
+                                <a href="FF.html">FF</a>
+                            </li>
+                            <li>
+                                <a href="NJSJ.html">NJSJ</a>
+                            </li>
+                            <li>
+                                <a href="ETC.html">ETC</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../link.html">Link</a>
+                    </li>
+                    <li>
+                        <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+                    </li>
+                </ul>   
+            </div>
+        </nav>
+    </header>
+    <!-- ここまでヘッダー --> 
+    <main>
+        <div class="PTcover">
+            <canvas class="particle center" width="1000" height="300" id="myCanvas"></canvas>
+        </div>
+
+        <section class="mainP-top center">
+            <h2 class="palette">Main</h2>
+            <div class="topEfilter"></div>
+            <div class="wd-flame">
+                <div class="main-topE">
+                    <img src="../img/mainPtopE/SDR2topE.jpg">
+                </div>
+                <div class="mainP-menu">
+                    <div class="move-bar">
+                        <div class="font-scroll">
+                            <span class="dot-font">SDR2(+DR) - NOMAL(various)/CP(KOMAHI)</span>
+                        </div>
+                    </div>
+                    <img class="seekbar" src="../img/seekbar-SDR2.png">
+                    <div class="genre-list container dot-font">
+                        <a class="genre1" href="#">SDR2</a>
+                        <a class="genre2" href="FF.html">FF</a>
+                        <a class="genre3" href="NJSJ.html">NJSJ</a>
+                        <a class="genre4" href="ETC.html">ETC</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pict-list">
+            <div class="center">
+                <div class="wd-top">
+                    <h3>NOMAL</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>SDR2+DR</h4>
+                    <p>大体時系列順（右下に向かうほど新しい）</p>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="all-content-01">
+                            <img src="../pict/SDR2/thumb/mioda.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-02">
+                            <img src="../pict/SDR2/thumb/komabirth.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-03">
+                            <img src="../pict/SDR2/thumb/naegi.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-04">
+                            <img src="../pict/SDR2/thumb/tumiki.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-05">
+                            <img src="../pict/SDR2/thumb/lefthand.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-06">
+                            <img src="../pict/SDR2/thumb/kamu.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-07">
+                            <img src="../pict/SDR2/thumb/topkomahi.jpg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-08">
+                            <img src="../pict/SDR2/thumb/atunuri-hinata.jpg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-09">
+                            <img src="../pict/SDR2/thumb/nanami.jpg">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- オールキャラの単体絵 -->
+            <div id="all-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>初描き澪田</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/mioda.jpeg">
+                    <div class="explain">
+                        <p>澪田かわいい好きだーの気持ちで、クリア後一発目に描いた絵</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>狛枝誕生日絵（'24）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/komabirth.jpeg">
+                    <div class="explain">
+                        <p>生まれてくれてありがとうの絵<br>幸あれ</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>初描き苗木くん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/naegi.jpeg">
+                    <div class="explain">
+                        <p>なんか思い思いに苗木くんについて語っています</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-04" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>初描きみかんちゃん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/tumiki.jpeg">
+                    <div class="explain">
+                        <p>みかんちゃんの誕生日に初描きした絵</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-05" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>左の手</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/lefthand.jpeg">
+                    <div class="explain">
+                        <p>厚塗り練習したいなと思って描いた狛枝<br>恐ろしい左手</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-06" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>初描きカムさん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/kamu.jpeg">
+                    <div class="explain">
+                        <p>もうちょっと日向くんの体つきに寄せたい</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-07" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>電子の海と日向、狛枝</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/topkomahi.jpg">
+                    <div class="explain">
+                        <p>このサイトのトップ絵用の書き下ろし<br>南国舞台なので自分の好きなvaporwaveと親和性が高い<br>好きと好きの掛け合わせでした</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-08" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>厚塗り日向</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/atunuri-hinata.jpg">
+                    <div class="explain">
+                        <p>息抜き、色塗り練習も兼ねて描いたザ・日向です</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-09" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>初描き七海ちゃん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/nanami.jpg">
+                    <div class="explain">
+                        <p>初描きシリーズ、七海の弾<br>この調子で初描き解禁していきたい</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+            <div class="center">
+                <div class="wd-top">
+                    <h3>CP・NSFW</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>狛日</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="komahi-content-01">
+                            <img src="../pict/SDR2/komahi/thumb/2Skomahi.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="komahi-content-02">
+                            <img src="../pict/SDR2/komahi/thumb/miraikomahi.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="komahi-content-03">
+                            <img src="../pict/SDR2/komahi/thumb/komahichu.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="komahi-content-04">
+                            <img src="../pict/SDR2/komahi/thumb/tanabata1.jpeg">
+                        </a> 
+                        <a class="modal-syncer button-link" data-target="komahi-content-05">
+                            <img src="../pict/SDR2/komahi/thumb/bani-komahi.jpg">
+                        </a>                    
+                        <a class="modal-syncer button-link" data-target="komahi-content-06">
+                            <img src="../pict/SDR2/komahi/thumb/sukinina-ru1.jpg">
+                        </a>                    
+                   
+                    </div>
+                    <h4>単体（NSFW）</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="nsfw-content-01">
+                            <img src="../pict/SDR2/komahi/thumb/nyakohinata.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 狛日の単体絵 -->
+            <div id="komahi-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>2章の狛日</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/komahi/2Skomahi.jpeg">
+                    <div class="explain">
+                        <p>結局どうやってご飯食べたんだろう…トイレは？？</p>
+                    </div>
+                </div>
+            </div>
+            <div id="komahi-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>未来機関パロ狛日</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/komahi/miraikomahi.jpeg">
+                    <div class="explain">
+                        <p>お試しに描いてみた<br>大人の狛日ってすごくとても夢がある</p>
+                    </div>
+                </div>
+            </div>
+            <div id="komahi-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>狛日のちゅー</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/komahi/komahichu.jpeg">
+                    <div class="explain">
+                        <p>キッス！キッス！</p>
+                    </div>
+                </div>
+            </div>
+            <div id="komahi-content-04" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>七夕狛日</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/SDR2/komahi/tanabata1.png">
+                        <img src="../pict/SDR2/komahi/tanabata2.png">
+                    </div>
+                    <div class="explain">
+                        <p>#狛日版週ドロライ のお題「七夕」の回に参加させていただきました！<br>誰とも分け隔てなく接する日と様々な理由で人付き合いが慎重な狛ゆえにすれ違う狛日（最終的には想いが通う）がオラでえすきだ…（過去ツイ引用）と言ってました自分が</p>
+                    </div>
+                </div>
+            </div>
+            <div id="komahi-content-05" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>バニーの日な狛日</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/SDR2/komahi/bani-komahi.jpg">
+                    <div class="explain">
+                        <p>きゃー破廉恥！！な格好をさせられてる二人の反応がどうしても見たくて…<br>ハイヒールで足が小鹿な日を狛が足で支えてくれています</p>
+                    </div>
+                </div>
+            </div>
+            <div id="komahi-content-06" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>FF8ネタパロ狛日</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/SDR2/komahi/sukinina-ru1.jpg">
+                        <img src="../pict/SDR2/komahi/sukinina-ru2.jpg">
+                    </div>
+                    <div class="explain">
+                        <p>こんなシーンあったなあてふと思い出したらつい狛に言わせたくなっちゃった<br>元ネタよろしく初期好感度じゃなびかないけど、もっと交流して、何度かアタックすれば通じるかも</p>
+                    </div>
+                </div>
+            </div>
+            <!-- NSFW絵 -->
+            <div id="nsfw-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>DIVAのモジュールコス</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/SDR2/komahi/module-cos/nyakohinata.jpg">
+                        <img src="../pict/SDR2/komahi/module-cos/tempkoma.jpg">
+                    </div>
+                    <div class="explain">
+                        <p>DIVAという大好きな音ゲーの衣装をですね、推しに着せるのが恒例行事なんです<br>多分懲りずにまた描く</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="center">
+                <div class="wd-top">
+                    <h3>LOG</h3>
+                </div>
+                <div class="wd-bottom">
+                    <P>□：ノーマル絵のみ／■：CP、NSFW絵あり</P>
+                    <h4>絵茶</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="etya-content-01">■</a>
+                        <a class="modal-syncer button-link" data-target="etya-content-02">■</a>
+                    </div>
+
+
+                    <h4>らくがき</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="rough-content-01">■</a>
+                        <a class="modal-syncer button-link" data-target="rough-content-02">□</a>
+                    </div>
+
+                    <h4>描け麻雀</h4>
+                    <div class="thumb container">                    
+                        <a class="modal-syncer button-link" data-target="kake-content-01">□</a>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- 絵茶ログ -->
+            <div id="etya-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>絵茶ログ（'24年5月〜6月）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <p class="att-txt">＜注意＞このログは<span>狛日</span>、<span>心中ネタ</span>の絵を含みます</p>
+                    <div class="log-box">
+                        <img src="../pict/SDR2/log/etya1/1minikomahi.jpeg">
+                        <img src="../pict/SDR2/log/etya1/2minikomahi.jpeg">
+                        <img src="../pict/SDR2/log/etya1/3namidahina.jpeg">
+                        <img src="../pict/SDR2/log/etya1/4mikigassaku.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>色々なところへお邪魔して描かせていただきました<br>最後の絵はサザナミちゃんとの合作で、未機パロ心中狛日でした（狛：サザナミちゃん、日：自分）<br>重いネタを一緒に描くの楽しい！</p>
+                    </div>
+                </div>
+            </div>
+            <div id="etya-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>絵茶ログ（'24年6月〜8月）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <p class="att-txt">＜注意＞このログは<span>狛日・召覚</span>、<span>獣耳・尻尾</span>、<span>牛コス</span>、<span>女装</span>の絵を含みます</p>
+                    <div class="log-box">
+                        <img src="../pict/SDR2/log/etya2/catkomahi.jpg">
+                        <img src="../pict/SDR2/log/etya2/usikomahi.jpg">
+                        <img src="../pict/SDR2/log/etya2/bani-gassaku.JPG">
+                    </div>
+                    <div class="explain">
+                        <p>お邪魔しました！<br>最後のバニーは8/2に描いたサザナミちゃんとの合作です！（覚醒：サザナミちゃん、召使：自分）</p>
+                        <p>獣耳と尻尾生やすのが癖です</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- らくがきログ -->
+            <div id="rough-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>らくがき（'24年4月〜5月）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <p class="att-txt">＜注意＞このログは<span>狛日</span>の絵を含みます</p>
+                    <div class="log-box">
+                        <img src="../pict/SDR2/log/rakugaki1/1Skomahi.jpeg">
+                        <img src="../pict/SDR2/log/rakugaki1/hina&koma.jpeg">
+                        <img src="../pict/SDR2/log/rakugaki1/koma.jpeg">
+                        <img src="../pict/SDR2/log/rakugaki1/minikoma&hina.PNG">
+                        <img src="../pict/SDR2/log/rakugaki1/komahi1.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>ハマりたてで日と狛に描き慣れてない頃の模索してた絵たち</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rough-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>アナログ絵その１</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/SDR2/log/analog1/analoghina.jpeg">
+                        <img src="../pict/SDR2/log/analog1/analogkoma.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>最近あんまり紙に描かないけど久しぶりに描くと楽しい</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ゆる描け麻雀 -->
+            <div id="kake-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ゆるゆる描け麻雀の会ログ</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/SDR2/log/yuru-kakema-jan/kake1-togami.jpg">
+                        <img src="../pict/SDR2/log/yuru-kakema-jan/kake2-komaeda.jpg">
+                    </div>
+                    <div class="explain">
+                        <p>描け麻雀やってみたい！の気持ちでゆるゆるルールの麻雀会を立ち上げました</p>
+                        <p>今の所全敗中です。麻雀修行の道は続く…いつかは誰かに描いてほしー！！</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="center">
+            <div class="FT-nav container">
+                <a href="../top.html">TOP</a>
+                <a href="../about.html">ABOUT</a>
+                <a href="../link.html">LINK</a>
+                <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+            </div>
+            <div class="FT-main-nav container">
+                <p>MAIN▶︎</p>
+                <div>
+                    <a href="#">SDR2</a>
+                    <a href="FF.html">FF</a>
+                    <a href="NJSJ.html">NJSJ</a>
+                    <a href="ETC.html">ETC</a>
+                </div>
+            </div>
+            <div class="FT-last container">
+                <p class="copyright">Copyright© 2024 onom All rights reserved.</p>
+                <a class="FT-escape" href="../index.html">
+                    <div class="shine"></div>
+                    <img src="../img/banner/exit.png">
+                </a>    
+            </div>
+        </div>
+    </footer>
+</div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="mainP.js"></script>
+<!-- ▼パーティクルライブラリ -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>MAIN - FF｜ST＊HP</title>
+</head>
+<!-- ここまで設定 -->
+<body>
+    <div id="is-loading">
+        <div id="loading" class="dot-font">
+            <p class="big-text">NOW LOADING…</p>
+            <img src="../img/loading-anime.gif" />
+            <p>（画像を読み込んでいます）</p>
+        </div>
+    </div>
+
+    <header class="top-menu">
+        <div class="container">
+            <div id="logo" class="logo">
+                <img src="../img/STHPlogo.png">
+            </div>
+            <!-- ↓　ハンバーガーメニュー（外観）　↓ -->
+                <span class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        <!-- ↓ナビゲーション↓ -->
+        <nav class="menu">
+            <div class="menu_wrap dot-font">
+                <ul class="nav">
+                    <li>
+                        <a href="../top.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Main</a>
+                        <ul class="genre">
+                            <li>
+                                <a href="SDR2.html">SDR2</a>
+                            </li>
+                            <li>
+                                <a href="#">FF</a>
+                            </li>
+                            <li>
+                                <a href="NJSJ.html">NJSJ</a>
+                            </li>
+                            <li>
+                                <a href="ETC.html">ETC</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../link.html">Link</a>
+                    </li>
+                    <li>
+                        <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+                    </li>
+                </ul>   
+            </div>
+        </nav>
+    </header>
+    <!-- ここまでヘッダー --> 
+    <main>
+        <div class="PTcover">
+            <canvas class="particle center" width="1000" height="300" id="myCanvas"></canvas>
+        </div>
+
+        <section class="mainP-top center">
+            <h2 class="palette">Main</h2>
+            <div class="topEfilter"></div>
+            <div class="wd-flame">
+                <div class="main-topE">
+                    <img src="../img/mainPtopE/589.jpeg">
+                </div>
+                <div class="mainP-menu">
+                    <div class="move-bar">
+                        <div class="font-scroll">
+                            <span class="dot-font">FF(DFF) - NOMAL(FF&DFF)/CP(59)</span>
+                        </div>
+                    </div>
+                    <img class="seekbar" src="../img/seekbar-FF.png">
+                    <div class="genre-list container dot-font">
+                        <a class="genre1" href="SDR2.html">SDR2</a>
+                        <a class="genre2" href="#">FF</a>
+                        <a class="genre3" href="NJSJ.html">NJSJ</a>
+                        <a class="genre4" href="ETC.html">ETC</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pict-list">
+            <div class="center">
+                <div class="wd-top">
+                    <h3>NOMAL</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>FF各シリーズ</h4>
+                    <p>大体時系列順（右下に向かうほど新しい）</p>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="all-content-01">
+                            <img src="../pict/FF/thumb/hopekun.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-02">
+                            <img src="../pict/FF/thumb/zidanekun.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-03">
+                            <img src="../pict/FF/thumb/battu200802.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="all-content-04">
+                            <img src="../pict/FF/thumb/suko-birth2024.jpg">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- オールキャラの単体絵 -->
+            <div id="all-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ホープくん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/hopekun.jpeg">
+                    <div class="explain">
+                        <p>厚塗りのホープくん</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ジタン</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/zidanekun.jpeg">
+                    <div class="explain">
+                        <p>謎のドヤ顔。<br>この頃はアナログで線画してデジタル彩色してますね</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>バッツの日('20)</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/battu200802.jpeg">
+                    <div class="explain">
+                        <p>8/2はバッツの日らしい</p>
+                    </div>
+                </div>
+            </div>
+            <div id="all-content-04" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>スコール誕生日の絵('24)</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/suko-birth2024.jpg">
+                    <div class="explain">
+                        <p>8/23当日にスコさんの誕生日を知り、急ぎ描きました<br>おめでとう！</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="center">
+                <div class="wd-top">
+                    <h3>CP・NSFW</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>59</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="59-content-01">
+                            <img src="../pict/FF/CP/thumb/sleepy59.JPG">
+                        </a>                        
+                        <a class="modal-syncer button-link" data-target="59-content-02">
+                            <img src="../pict/FF/CP/thumb/59day2021.JPG">
+                        </a>
+                    </div>
+                    <h4>単体（NSFW）</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="NSFW-content-01">
+                            <img src="../pict/FF/CP/thumb/maid-zidane.JPG">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 59絵 -->
+            <div id="59-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ねむそうな59</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/CP/sleepy59.JPG">
+                    <div class="explain">
+                        <p>ポーズ資料を参考に練習した59だったと思います</p>
+                    </div>
+                </div>
+            </div>
+            <div id="59-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>59の日('21)</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/CP/59day2021.JPG">
+                    <div class="explain">
+                        <p>互いの体温に安心する59な感じ</p>
+                    </div>
+                </div>
+            </div>
+            <!-- NSWF単体絵 -->
+            <div id="NSFW-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>メイドジタン</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/FF/CP/maid-zidane.JPG">
+                    <div class="explain">
+                        <p>演劇団員でもあるから割とノリノリで着てくれそうとか思って描いたかも<br>ふんわり衣装とかっけぇ武器の組み合わせ、大の好き</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="center">
+                <div class="wd-top">
+                    <h3>LOG</h3>
+                </div>
+                <div class="wd-bottom">
+                    <P>□：ノーマル絵のみ／■：CP、NSFW絵あり</P>
+                    <h4>らくがき</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="rough-content-01">□</a>
+                        <a class="modal-syncer button-link" data-target="rough-content-02">□</a>
+                        <a class="modal-syncer button-link" data-target="rough-content-03">■</a>
+                    </div>
+                </div>
+            </div>
+            <!-- らくがきログ -->
+            <div id="rough-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>らくがき（'20〜'23）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/FF/rakugaki/torenozidane.jpeg">
+                        <img src="../pict/FF/rakugaki/etyaLightsan.jpeg">
+                        <img src="../pict/FF/rakugaki/suko-ru.jpeg">
+                        <img src="../pict/FF/rakugaki/rinoadazo.jpeg">
+                        <img src="../pict/FF/rakugaki/589.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>ぐちゃっと描いたデジ絵とか絵茶とか<br>589の絵色塗りした〜いと思いながらずっとできてない…！そのうち塗ります多分</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rough-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>アナログ絵その１（'19〜'21）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/FF/analog/urooboeDFF.jpg">
+                        <img src="../pict/FF/analog/analog589.jpg">
+                        <img src="../pict/FF/analog/lightsan10th.jpeg">
+                        <img src="../pict/FF/analog/kaeru-ff9.jpg">
+                        <img src="../pict/FF/analog/uruse-rakugaki.jpeg">
+                        <img src="../pict/FF/analog/sukorino.jpeg">
+                    </div>
+                    <div class="explain">
+                        <p>古いやつ恥ずかし〜！！と思いつつなんとなく好きなので載せちゃう</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rough-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>アナログ絵その2（59まとめ）</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <p class="att-txt">＜注意＞このログは<span>59</span>の絵を含みます</p>
+                    <div class="log-box">
+                        <img src="../pict/FF/CP/analog/neko59.JPG">
+                        <img src="../pict/FF/CP/analog/mimi1.jpg">
+                        <img src="../pict/FF/CP/analog/mimi2.jpg">
+                        <img src="../pict/FF/CP/analog/mimi3.jpg">
+                        <img src="../pict/FF/CP/analog/itya59.jpg">
+                    </div>
+                    <div class="explain">
+                        <p>けもみみ生やすの好きすぎか<br>最後は正統派ないちゃいちゃ59でお送りしました</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="center">
+            <div class="FT-nav container">
+                <a href="../top.html">TOP</a>
+                <a href="../about.html">ABOUT</a>
+                <a href="../link.html">LINK</a>
+                <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+            </div>
+            <div class="FT-main-nav container">
+                <p>MAIN▶︎</p>
+                <div>
+                    <a href="SDR2.html">SDR2</a>
+                    <a href="#">FF</a>
+                    <a href="NJSJ.html">NJSJ</a>
+                    <a href="ETC.html">ETC</a>
+                </div>
+            </div>
+            <div class="FT-last container">
+                <p class="copyright">Copyright© 2024 onom All rights reserved.</p>
+                <a class="FT-escape" href="../index.html">
+                    <div class="shine"></div>
+                    <img src="../img/banner/exit.png">
+                </a>    
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="mainP.js"></script>
+<!-- ▼パーティクルライブラリ -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex,noarchive,nofollow,noimageindex">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/destyle.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>MAIN - ETC｜ST＊HP</title>
+</head>
+<!-- ここまで設定 -->
+<body>
+    <div id="is-loading">
+        <div id="loading" class="dot-font">
+            <p class="big-text">NOW LOADING…</p>
+            <img src="../img/loading-anime.gif" />
+            <p>（画像を読み込んでいます）</p>
+        </div>
+    </div>
+    
+    <header class="top-menu">
+        <div class="container">
+            <div id="logo" class="logo">
+                <img src="../img/STHPlogo.png">
+            </div>
+            <!-- ↓　ハンバーガーメニュー（外観）　↓ -->
+                <span class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        <!-- ↓ナビゲーション↓ -->
+        <nav class="menu">
+            <div class="menu_wrap dot-font">
+                <ul class="nav">
+                    <li>
+                        <a href="../top.html">Top</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Main</a>
+                        <ul class="genre">
+                            <li>
+                                <a href="SDR2.html">SDR2</a>
+                            </li>
+                            <li>
+                                <a href="#">FF</a>
+                            </li>
+                            <li>
+                                <a href="NJSJ.html">NJSJ</a>
+                            </li>
+                            <li>
+                                <a href="#">ETC</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../link.html">Link</a>
+                    </li>
+                    <li>
+                        <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+                    </li>
+                </ul>   
+            </div>
+        </nav>
+    </header>
+    <!-- ここまでヘッダー --> 
+    <main>
+        <div class="PTcover">
+            <canvas class="particle center" width="1000" height="300" id="myCanvas"></canvas>
+        </div>
+
+        <section class="mainP-top center">
+            <h2 class="palette">Main</h2>
+            <div class="topEfilter"></div>
+            <div class="wd-flame">
+                <div class="main-topE">
+                    <img src="../img/mainPtopE/remiria.jpeg">
+                </div>
+                <div class="mainP-menu">
+                    <div class="move-bar">
+                        <div class="font-scroll">
+                            <span class="dot-font">ETC - TOHO/VOCALOID/GAMES/OTHERS</span>
+                        </div>
+                    </div>
+                    <img  class="seekbar" src="../img/seekbar-ETC.png">
+                    <div class="genre-list container dot-font">
+                        <a class="genre1" href="SDR2.html">SDR2</a>
+                        <a class="genre2" href="FF.html">FF</a>
+                        <a class="genre3" href="NJSJ.html">NJSJ</a>
+                        <a class="genre4" href="#">ETC</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pict-list">
+            <div class="center">
+                <div class="wd-top">
+                    <h3>東方Project</h3>
+                </div>
+                <div class="wd-bottom">
+                    <p>大体時系列順（右下に向かうほど新しい）</p>
+                    <h4>ワンドロ絵</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="1doro-content-01">
+                            <img src="../pict/ETC/TOHO/onedoro/thumb/remiria.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="1doro-content-02">
+                            <img src="../pict/ETC/TOHO/onedoro/thumb/tenko.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="1doro-content-03">
+                            <img src="../pict/ETC/TOHO/onedoro/thumb/kogasa.jpeg">
+                        </a>
+                        <a class="modal-syncer button-link" data-target="1doro-content-04">
+                            <img src="../pict/ETC/TOHO/onedoro/thumb/huran&ke-ne.jpeg">
+                        </a>
+                    </div>
+                    <h4>らくがき</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="THlog-content-01">□</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 東方ワンドロの絵 -->
+            <div id="1doro-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>レミリア</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/TOHO/onedoro/remiria.jpeg">
+                    <div class="explain">
+                        <p>少ない色数でシンプルに描くのに挑戦したやつ<br>お嬢のカリスマ具合を表現したいよね</p>
+                    </div>
+                </div>
+            </div>
+            <div id="1doro-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ひななゐてんこ</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/TOHO/onedoro/tenko.jpeg">
+                    <div class="explain">
+                        <p>ここまでアナログ線画→デジタル彩色で描いてたっぽい<br>天人の余裕、みさらせや〜って顔してる</p>
+                    </div>
+                </div>
+            </div>
+            <div id="1doro-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>たったら小傘</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/TOHO/onedoro/kogasa.jpeg">
+                    <div class="explain">
+                        <p>小傘ちゃんのビジュと弾幕が綺麗で好きって気持ちを込めてたり</p>
+                    </div>
+                </div>
+            </div>
+            <div id="1doro-content-04" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>フランと慧音</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/TOHO/onedoro/huran&ke-ne.jpeg">
+                    <div class="explain">
+                        <p>お題がこの二人だったので、<br>赤い眼と月が似合う共通点で一緒に描いたよ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 東方のログ -->
+            <div id="THlog-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>アナログ絵</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box">
+                        <img src="../pict/ETC/TOHO/ex3musume.jpg">
+                        <img src="../pict/ETC/TOHO/tohoanalog.jpg">
+                        <img src="../pict/ETC/TOHO/tohoanalog1.jpg">
+                        <img src="../pict/ETC/TOHO/tohoanalog2.jpg">
+                    </div>
+                    <div class="explain">
+                        <p>アナログとか絵茶の絵とかでお気に入りの絵たち</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="center">
+                <div class="wd-top">
+                    <h3>VOCALOID</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>ミクさん</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="miku-content-01">
+                            <img src="../pict/ETC/VOCALOID/thumb/mikuzukin.jpg">
+                        </a>
+
+                        <a class="modal-syncer button-link" data-target="miku-content-02">
+                            <img src="../pict/ETC/VOCALOID/thumb/dokokade.jpg">
+                        </a>
+
+                        <a class="modal-syncer button-link" data-target="miku-content-03">
+                            <img src="../pict/ETC/VOCALOID/thumb/dearmybuny.png">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- ミクさんの絵 -->
+            <div id="miku-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>ｱｰﾙﾇｰｳﾞｫｰなみくずきん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/VOCALOID/mikuzukin.jpg">
+                    <div class="explain">
+                        <p>またの名をミュシャ風という<br>ミュシャリスペクトなのでアナログで描いてたり<br>背景に曲モチーフを詰め込むの楽しかった</p>
+                    </div>
+                </div>
+            </div>
+            <div id="miku-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>曲イメージ絵</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/VOCALOID/dokokade.jpg">
+                    <div class="explain">
+                        <p>梨本Pの好きな曲のイメージです<br>今は亡きdrawerとかいうwebサービスで描いてた絵でもある（ネット老人会）</p>
+                    </div>
+                </div>
+            </div>
+            <div id="miku-content-03" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>イチオシのDIVAモジュールたち</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <div class="log-box borderless">
+                        <img src="../pict/ETC/VOCALOID/sticker/mikuzukin.png">
+                        <img src="../pict/ETC/VOCALOID/sticker/eldanju.png">
+                        <img src="../pict/ETC/VOCALOID/sticker/dearmybuny.png">
+                        <img src="../pict/ETC/VOCALOID/sticker/nyankomiku.png">
+                        <img src="../pict/ETC/VOCALOID/sticker/celebration.png">
+                    </div>
+                    <div class="explain">
+                        <p>地元のイベントでの頒布物で書き下ろしたモジュールたち<br>上からみくずきん、エールダンジュ、マイディアバニー、にゃんこ、セレブレーション　です<br>初音ミクProjectDIVAをラブフォーエバーしてます</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="center">
+                <div class="wd-top">
+                    <h3>その他</h3>
+                </div>
+                <div class="wd-bottom">
+                    <h4>色んなゲーム</h4>
+                    <div class="thumb container">
+                        <a class="modal-syncer button-link" data-target="games-content-01">
+                            <img src="../pict/ETC/thumb/chotenchan.jpg">
+                        </a>
+
+                        <a class="modal-syncer button-link" data-target="games-content-02">
+                            <img src="../pict/ETC/thumb/thina-seno.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- その他ジャンルの絵 -->
+            <div id="games-content-01" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>【NGOD】超てんちゃん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/chotenchan.jpg">
+                    <div class="explain">
+                        <p>とても久しぶりにアクリル絵の具を使った時の絵<br>超てんちゃんは描いてても塗ってても楽しいビジュをしている</p>
+                    </div>
+                </div>
+            </div>
+            <div id="games-content-02" class="modal-content">
+                <div class="MDwd-top container">
+                    <h5>【原神】ティナリくんとセノくん</h5>
+                    <a id="modal-close" class="button-link">&times;</a>
+                </div>
+                <div class="MDwd-bottom">
+                    <img src="../pict/ETC/thina-seno.jpeg">
+                    <div class="explain">
+                        <p>原神始めたてのにわかながら、<br>特に気になる二人を描いた絵です</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="center">
+            <div class="FT-nav container">
+                <a href="../top.html">TOP</a>
+                <a href="../about.html">ABOUT</a>
+                <a href="../link.html">LINK</a>
+                <a href="https://ss1.xrea.com/sthp.s324.xrea.com/potiboard5/index.html">MEMO</a>
+            </div>
+            <div class="FT-main-nav container">
+                <p>MAIN▶︎</p>
+                <div>
+                    <a href="SDR2.html">SDR2</a>
+                    <a href="FF.html">FF</a>
+                    <a href="NJSJ.html">NJSJ</a>
+                    <a href="#">ETC</a>
+                </div>
+            </div>
+            <div class="FT-last container">
+                <p class="copyright">Copyright© 2024 onom All rights reserved.</p>
+                <a class="FT-escape" href="../index.html">
+                    <div class="shine"></div>
+                    <img src="../img/banner/exit.png">
+                </a>    
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="mainP.js"></script>
+    <!-- ▼パーティクルライブラリ -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="https://cdn.rawgit.com/ics-creative/ParticleJS/release/1.0.0/libs/particlejs.min.js"></script>
+
+</body>
+</html>

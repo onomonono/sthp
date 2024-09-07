@@ -1,0 +1,302 @@
+/* メインページの設定 */
+main {
+    background-position: 31% -10%;
+}
+
+h2.palette {
+    top: 4.2em;
+    width: 10em;
+    display: inline-block;
+    position: absolute;
+}
+.about h2.palette {
+    position: static;
+}
+.big-text {
+    font-size: xx-large;
+}
+
+.wd-bottom {
+    margin-bottom: 1em;
+}
+
+#is-loading {
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #414BDE;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+}
+#is-loading img {
+    width: 150px;
+    height: 150px;
+}
+#is-loading .big-text {
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+}
+#loading {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 200px;
+    height: 300px;
+    margin-top: -100px;
+    margin-left: -100px;
+}   
+
+div.wd-flame {
+    width: 384px;
+    height: 545px;
+    margin-bottom: 1em;
+    background-position: 1px 0;
+    background-repeat: no-repeat;
+    background-size: 384px 545px;
+    background-image: url(../img/main-wd.png);
+}
+.topEfilter {
+    height: 310px;
+    width: 310px;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    background-image: radial-gradient(circle, #d778fc, #414BDE);
+    margin-left: 2.4em;
+    top: 10em;
+    position: absolute;
+}
+.main-topE  {
+    width: 310px;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+.main-topE img {
+    border-right: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    border-left: solid 2px #414BDE;
+    border-top: solid 3px #414BDE;
+    width: 310px;
+    height: auto;
+}
+
+.mainP-menu {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 2.8em;
+    padding-left: 7px;
+}
+.mainP-menu img {
+    width: 340px;
+    margin-top: 1em;
+}
+
+.move-bar {
+    margin-left: 4.1em;
+    color: #fff;
+}
+.font-scroll {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5em;
+    width: 11.2em;
+    height: 1.5em;
+    overflow: hidden;
+}
+.font-scroll span {
+    white-space : nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    line-height : 1em;
+    animation   : scrollAnime 10s linear infinite;
+}
+@keyframes scrollAnime{
+    0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
+}
+
+img.seekbar {
+    margin-left: 5px;
+    width: 335px;
+}
+
+.genre-list {
+    margin-left: 3.3em;
+    margin-top: 3px;
+    font-size: 20px;
+}
+.genre-list a {
+    margin-right: 1.6em;
+}
+
+.thumb {
+    color: #00f;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 20em;
+    flex-wrap: wrap;
+}
+.thumb a {
+    margin-right: 5px;
+}
+.thumb img {
+    width: 4em;
+    margin-right: 0.6em;
+    margin-bottom: 0.8em;
+    border-right: solid 2px #414BDE;
+    border-bottom: solid 2px #414BDE;
+}
+.thumb img:hover {
+    border-right: none;
+    border-bottom: none;
+    border-left: solid 2px #414BDE;
+    border-top: solid 2px #414BDE;
+    mix-blend-mode: hard-light;
+}
+
+
+
+/* モーダル設定 */
+
+.modal-content{
+    height: auto;
+	width:fit-content;
+	margin: 0;
+	/* padding:10px 20px;
+	border:2px solid #aaa;
+	background:#fff; */
+    position: fixed;
+    display:none;
+	z-index:999;
+}
+
+.modal-content img {
+    border:1px solid #00f;
+    height: auto;
+    max-height: 80vh;
+    max-width: 50vw;
+    margin-bottom: 1em;
+    transform: none;
+}
+.borderless img {
+    border: none;
+}
+
+.modal-p{
+	margin-top:1em;
+}
+
+.modal-p:first-child{
+	margin-top:0;
+}
+
+.explain {
+    max-width: 50vw;
+}
+
+#modal-overlay{
+	z-index:100;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
+
+.MDwd-top {
+    color: #fff;
+    width: auto;
+    margin-top: 2em;
+    height: 2.5em;
+    border-radius: 5px 5px 0 0;
+    border-right: solid 2px #00f;
+    background-color: #414BDE;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .MDwd-top h5 {
+    width: 100%;
+    padding-left: 2.5em;
+    text-align: center;
+  }
+  
+.MDwd-top .button-link {
+    display: inline-block;
+	color:#fff;
+    background-color: #FC78F3;
+    border: solid #00f;
+    font-size: 1.8em;
+    padding-bottom: 2px;
+    text-align: center;
+}
+ 
+.button-link:hover {
+	cursor: pointer;
+	color: #FC78F3;
+}
+.MDwd-top .button-link:hover {
+    background-color: #fff;
+}
+
+
+.MDwd-bottom {
+    max-width: 70vw;
+    max-height: 90vh;
+    width: fit-content;
+    background-color: #e6e6e675;
+    border-right: solid 2px #00f;
+    border-bottom: solid 2px #00f;
+    border-radius: 0 0 5px 5px;
+    margin-left: 1px;
+    padding: 1em;
+    margin-bottom: 2em;
+    overflow-y: scroll;
+    color: #fff;
+    text-align: center;
+}
+.log-box {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.att-txt {
+    width: fit-content;
+    background-color: #fff;
+    color: #00f;
+    font-weight: 700;
+    font-size: large;
+    margin: 5em auto 5em;
+}
+.att-txt span {
+    color: #ff26f1;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .MDwd-top {
+        max-width: 95vw;
+        margin-top: 3em;
+    }
+    .MDwd-bottom {
+        max-width: 95vw;
+        max-height: 80vh;
+        padding: 1em 0.5em;
+    }
+    .modal-content img {
+        max-width: 90vw;
+    }
+    .log-box {
+        width: auto;
+    }
+    .explain {
+        max-width: 20em;
+    }
+}
