@@ -196,11 +196,12 @@ h2.palette {
 }
 .wd-bottom {
   width: 23em;
-  background-color: #e6e6e6e9;
+  backdrop-filter: blur(10px);
+  background-color: #e6e6e6b1;
   border-right: solid 2px #0011ff;
   border-bottom: solid 2px #0011ff;
   border-radius: 0 0 5px 5px;
-  margin-left: 1px;
+  margin-left: 2px;
   padding: 1em 2em;
   margin-bottom: 2em;
 }
@@ -475,6 +476,43 @@ div.seheki {
   padding: 1em 0;
   border-bottom: dashed 1px #4d4d4d;
 }
+.genre-hukidasi::before {
+  display: block;
+  content: 'ー';
+  position: absolute;
+  transform: rotate(20deg);
+  margin-left: -25px;
+  color: #0011ff;
+}
+.genre-hukidasi {
+  border: solid #0011ff 1px;
+  border-right: solid #0011ff 2px;
+  border-bottom: solid #0011ff 2px;
+  background-color: #a1e6da;
+  width: 15em;
+  padding: 5px 10px;
+}
+.accordion-header, .accordion-header-first {
+  transition:transform .3s ease;
+  cursor: pointer;
+  position: relative;
+  justify-content: space-between;
+}
+.accordion-content {
+  display: none;
+}
+.genre-bd span {
+  display: block;
+  color: #ff26f1;
+}
+.accordion-header-first span::after, .accordion-header span::after {
+  margin-left: 11.5em;
+  content: '▼';
+}
+.accordion-header-first.active span::after, .accordion-header.active span::after {
+  content: '▲';
+}
+
 .genre-bd:first-of-type {
   padding-top: 0.5em;
 }

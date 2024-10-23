@@ -15,6 +15,22 @@ h2.palette {
 .big-text {
     font-size: xx-large;
 }
+.white {
+    color: #fff;
+}
+.cyaan {
+    color: #6DF0DC;
+}
+.pink {
+    color: #ff26f1;
+}
+.wh-pink {
+    color: #fff;
+    background-color: #FC78F3;
+}
+.piclist-ex {
+    line-height: 1.8em;
+}
 
 .wd-bottom {
     margin-bottom: 1em;
@@ -158,8 +174,116 @@ img.seekbar {
     border-top: solid 2px #414BDE;
     mix-blend-mode: hard-light;
 }
+a.newpic {
+    color: #FC78F3;
+}
+a.newpic:hover {
+    color: #fff;
+}
+.newpic img {
+    border-right: solid 2px #FC78F3;
+    border-bottom: solid 2px #FC78F3;
+}
+.newpic img:hover {
+    border-right: none;
+    border-bottom: none;
+    border-left: solid 2px #FC78F3;
+    border-top: solid 2px #FC78F3;
+}
 
-
+.pege-branch {
+    width: 23em;
+}
+.folder-box {
+    width: 240px;
+    margin: 0 auto;
+}
+.folder-box img {
+    width: 100px;
+}
+.folder-box a {
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: auto 90px;
+    background-image: url(../img/folder1.gif);
+    text-align: center;
+    color: #fff;
+    width: 120px;
+    transition: none;
+}
+.folder-box a:hover {
+    background-image: url(../img/folder2.gif);
+    color: #6DF0DC;
+}
+.folder-box p {
+    padding-top: 100px;
+    padding-left: 1em;
+}
+.secret-box {
+    text-align: center;
+    margin-top: 3em;
+}
+.secret-box .accordion-header {
+    margin: 0 auto;
+    width: fit-content;
+}
+.secret-box img {
+    width: 35px;
+    height: auto;
+}
+.secret-box .seheki {
+    width: 20em;
+    margin: 0.5em auto 0;
+}
+.secret-box li {
+    margin-bottom: 0;
+    color: #fff;
+}
+.key-hukidasi::before {
+    display: block;
+    position: absolute;
+    content: '▲';
+    color: #e6e6e6e9;
+    width: 1em;
+    margin: -2.7em 11em;
+}
+.key-hukidasi {
+    border-radius: 5px;
+    margin-top: 2em;
+    background-color: #e6e6e6e9;
+    padding: 1.5em 0;
+} 
+.key-hukidasi a, .hibun input {
+    color: #d778fc;
+    text-decoration: underline;
+}
+a.back {
+    color: #6DF0DC;
+    font-size: small;
+}
+.seheki a:hover {
+    color: #fff;
+}
+.seheki li,.seheki p {
+    text-align: left;
+}
+.seheki span {
+    font-weight: bold;
+}
+.hibun {
+    margin-top: 2em;
+    padding-top: 2em;
+    letter-spacing: 1.5px;
+    border-top: dotted 2px #00f;
+}
+.hibun input {
+    font-weight: bold;
+    font-size: medium;
+    padding: 0 5px 5px;
+}
+.hibun input:hover {
+    color: #00f;
+}
 
 /* モーダル設定 */
 
@@ -207,6 +331,7 @@ img.seekbar {
 	left:0;
 	width:100%;
 	height:120%;
+    backdrop-filter: blur(4px);
 	background-color:rgba(0,0,0,0.75);
 }
 
@@ -250,7 +375,7 @@ img.seekbar {
     max-width: 70vw;
     max-height: 90vh;
     width: fit-content;
-    background-color: #e6e6e675;
+    background-color: #e6e6e65c;
     border-right: solid 2px #00f;
     border-bottom: solid 2px #00f;
     border-radius: 0 0 5px 5px;
