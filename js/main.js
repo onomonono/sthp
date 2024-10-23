@@ -145,3 +145,16 @@ $(function () {
         $('.hamburger, .menu').toggleClass('show');
     });
 });
+
+
+// アコーディオンメニュー
+$('.accordion-header-first').addClass('active');
+ // 1番目にある.accordion-headerにクラスactiveを追加
+$('.accordion-content-first').css('display', 'block');
+ // 2番目にある.accordion-contentにdisplay: block;を追加
+
+$('.accordion-header, .accordion-header-first').click(function() {
+    $(this).next().slideToggle();
+     // Toggleは「交互に繰り返す」なので、clickすることで問題なく動く
+    $(this).toggleClass('active');
+});
