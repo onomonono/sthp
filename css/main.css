@@ -650,17 +650,13 @@ div.thank-message {
 div.clapbox {
   width: fit-content;
   height: fit-content;
-  padding-right: 3.5em;
+  padding-right: 2em;
   margin: 3em auto 3em;
 }
-a.claphand {
-  margin: 0 auto;
-  width: fit-content;
-}
-a.claphand:hover {
+a.claphand:hover, a.diary:hover {
   color: #fff;
 }
-.claphand p {
+.claphand p, .diary p {
   width: fit-content;
   padding: 0 8px;
   border: solid 1px #fff;
@@ -673,13 +669,25 @@ div.fukidasi::after {
   display: block;
   content: '＼';
 }
-a.claphand {
+.diary div.fukidasi::after {
+  margin-left: 1em;
+  content: '／';
+}
+a.claphand,a.diary {
+  margin: 0 auto;
+  width: fit-content;
   color: #fff;
-  width: 80px;
+  width: 120px;
   height: 80px;
   cursor: pointer;
 }
-a.claphand img {
+a.claphand {
+  margin-right: 3em;
+}
+a.diary {
+  height: 100px;
+}
+a.claphand img,a.diary img {
   content: url("../img/clap1.gif");
   display: inline-block;
   width: 100%;
@@ -688,6 +696,18 @@ a.claphand img {
 @media (hover: hover){
 .claphand img:hover {
   content: url("../img/clap2.gif");
+}}
+
+a.diary img {
+  content: url("../img/diary.gif");
+  display: inline-block;
+  margin-top: 1em;
+  width: 80%;
+  height: 80%;
+}
+@media (hover: hover){
+.diary img:hover {
+  content: url("../img/diary2.gif");
 }}
 
 .dummy-text {

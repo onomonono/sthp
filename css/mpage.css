@@ -204,20 +204,25 @@ a.newpic:hover {
 .folder-box a {
     background-repeat: no-repeat;
     background-position: 0;
-    background-size: auto 90px;
+    background-size: auto 80px;
     background-image: url(../img/folder1.gif);
     text-align: center;
     color: #fff;
-    width: 120px;
+    width: 110px;
     transition: none;
 }
 .folder-box a:hover {
     background-image: url(../img/folder2.gif);
     color: #6DF0DC;
 }
+a.new-f {
+    background-image: url(../img/new-folder1.gif);
+}
+a.new-f:hover {
+    background-image: url(../img/new-folder2.gif);
+}
 .folder-box p {
-    padding-top: 100px;
-    padding-left: 1em;
+    padding-top: 110px;
 }
 .secret-box {
     text-align: center;
@@ -271,10 +276,11 @@ a.back {
     font-weight: bold;
 }
 .hibun {
-    margin-top: 2em;
-    padding-top: 2em;
+    margin: 2em 0;
+    padding: 2em 0;
     letter-spacing: 1.5px;
     border-top: dotted 2px #00f;
+    border-bottom: dotted 2px #00f;
 }
 .hibun input {
     font-weight: bold;
@@ -284,6 +290,15 @@ a.back {
 .hibun input:hover {
     color: #00f;
 }
+
+.scp-upd {
+    margin: 0.5em auto;
+    padding: 0.5em 1em;
+    width: 20em;
+    border: solid 1px #00f;
+    background-color: #6DF0DC;
+}
+
 
 /* モーダル設定 */
 
@@ -403,6 +418,7 @@ a.back {
     color: #ff26f1;
     text-decoration: underline;
 }
+
 
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
