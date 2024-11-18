@@ -427,6 +427,7 @@ a.back {
         margin-top: 3em;
     }
     .MDwd-bottom {
+        background-color: #e6e6e67c;
         max-width: 95vw;
         max-height: 80vh;
         padding: 1em 0.5em;

@@ -616,6 +616,14 @@ div.bkm {
   margin-right: 1em;
   margin-bottom: 1.5em;
 }
+.th-sozai p,.th-sozai a {
+  display: block;
+  font-size: small;
+  width: fit-content;
+}
+.th-sozai a:hover {
+  color: #6DF0DC;
+}
 
 .mylink {
   margin-top: 2em;
