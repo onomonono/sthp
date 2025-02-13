@@ -141,7 +141,7 @@ h2.palette {
   margin-bottom: 1em;
 }
 
-.dot-font, h1, h2, h3, h4, .MDwd-top h5, footer a {
+.dot-font, h1, h2, h3, h4, h5, .MDwd-top h5, footer a {
   letter-spacing: 2px;
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
