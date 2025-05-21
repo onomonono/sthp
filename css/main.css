@@ -621,9 +621,18 @@ div.bkm {
   font-size: small;
   width: fit-content;
 }
+.th-sozai a {
+  font-weight: 500;
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+  color: #ff26f1;
+  background-color: #6DF0DC;
+}
 .th-sozai a:hover {
   color: #6DF0DC;
+  background-color: #ff26f1;
 }
+
 
 .mylink {
   margin-top: 2em;
