@@ -292,6 +292,7 @@ a.back {
 }
 
 .scp-upd {
+    text-align: left;
     margin: 0.5em auto;
     padding: 0.5em 1em;
     width: 20em;
@@ -306,9 +307,6 @@ a.back {
     height: auto;
 	width:fit-content;
 	margin: 0;
-	/* padding:10px 20px;
-	border:2px solid #aaa;
-	background:#fff; */
     position: fixed;
     display:none;
 	z-index:999;
@@ -400,6 +398,12 @@ a.back {
     overflow-y: scroll;
     color: #fff;
     text-align: center;
+}
+.MDwd-bottom a {
+    color: #FC78F3;
+}
+.MDwd-bottom a:hover {
+    color: #00f;
 }
 .log-box {
     width: 50vw;
