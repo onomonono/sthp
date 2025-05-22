@@ -89,7 +89,7 @@
                 <div class="wd-bottom">
                     <ul class="chui-list">
                         <li>当サイトは非公式二次創作を扱います(検索避け済み)。版権元の原作者様・企業様・関係者の方々とは一切関係ありません。</li>
-                        <li>掲載作品の無断転載、加工、自作発言、直リンク、商用利用、AI学習などへの使用を禁じます。<br>※個人利用の範囲はOKです</li>
+                        <li>掲載作品の無断転載、加工、自作発言、直リンク、商用利用、AI学習などへの使用を禁じます。（※個人利用の範囲はOK）</li>
                         <li>作品内に、腐向け（BL）・アブノーマル表現など人を選ぶ要素を含みます。くれぐれも自己責任で閲覧ください。</li>
                         <li>原作のネタバレを含む絵を載せています。原作を全て履修したうえでの閲覧を推奨します。</li>
                     </ul>
@@ -182,6 +182,7 @@
         </section>
         
         <svg class="wave" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path id="wave2" d=""/>
             <path id="wave" d=""/>
         </svg>        
         <section class="profile">
@@ -200,11 +201,11 @@
                     </div>
                 </div>
                 <p class="kaigyo">昔からネットに入り浸って生きてきたので、平成懐古オタク脳（かぶれ）。<br>ニコ厨だったりネットで流行ってるもんが大好き。</p>
-                <p>地元のイベントで一度だけサークル経験して以来、遠方でのサークル参加も目標に実生活をなんとかしようとしています。（2025年には出たい）</p>
-                <p>絵柄が定まらないのが最近の悩み。</p>
+                <p>最近は地元から少し離れた地方イベントにサークル参加できました。次は東京へ！</p>
+                <p>色々安定させたい頃合い。</p>
                 <div class="container sns">
                     <h3>SNS</h3>
-                    <p>※お問い合わせはXのDMへお願いします</p>
+                    <p>▶︎お問い合わせはXのDMへお願いします</p>
                 </div>
                 <div class="container sns-txt">
                     <img src="img/x.gif" alt="Xのアイコン">
@@ -222,20 +223,50 @@
                         <p>論破：<a href="https://bsky.app/profile/onom555.bsky.social">onom555.bsky.social</a></p>
                     </div>
                 </div>
+
+                <div class="sns container illust-link">
+                    <h3>イラスト投稿</h3>
+                    <p>▶︎各用途で使い分けてたりしてます</p>
+                </div>
+                <div class="container sns-txt">
+                    <img src="img/pixiv.gif" alt="pixivのアイコン">
+                    <div>
+                        <p>絵ログ、告知用：<a href="https://www.pixiv.net/users/106927334">106927334</a></p>
+                    </div>
+                </div>
+                <div class="container sns-txt">
+                    <img src="img/xfolio.gif" alt="xfolioのアイコン">
+                    <div>
+                        <p>高画質絵置き場：<a href="https://xfolio.jp/portfolio/onom_555">onom_555</a></p>
+                    </div>
+                </div>
+
+                <div class="sns container EC-link">
+                    <h3>通販</h3>
+                    <p>▶︎大抵はリアイベ直後に、頒布物残部を出品しています</p>
+                </div>
+                <div class="container sns-txt">
+                    <p>BOOTH：<a href="https://3daymc.booth.pm/">3day＊MC</a></p>
+                </div>
             </div>
+
             <div id="prof-content-01" class="modal-content">
                 <div class="MDwd-top container">
-                    <h5>ハマったジャンル変遷</h5>
+                    <h5>小言コーナー</h5>
                     <a id="modal-close" class="button-link">&times;</a>
                 </div>
                 <div class="MDwd-bottom ganre-histry">
+                    <h6>&starf;ハマったジャンル変遷&starf;</h6>
                     <p>'13〜'14 ぷよぷよ、戦国BASARA</p>
                     <p>'15〜'16 BEMANI、松</p>
                     <p>'17〜'18 コンパス、ヘタリア </p>
                     <p>'19〜'20 FF(DFF)</p>
                     <p>'20〜'23 にじさんじ</p>
                     <p class="kaigyo">'24 SDR2</p>
-                    <p class="x-small">※その期間で一番ハマってたジャンルです<br>※他にも好きな作品がありますが多いので省略</p>
+                    <p class="kaigyo x-small">※その期間で一番ハマってたジャンルです<br>※他にも好きな作品がありますが多いので省略</p><br>
+                    <h6>&starf;おのむ豆知識&starf;</h6>
+                    <p class="kaigyo">mono（消しゴム）が好きで、かつてHNもmonoで活動していたが名前被りや商品名ママなのを考慮し、monoをひっくり返してonom（おのむ）に改名したらしい。</p>
+                    <p>代理としているアイコンの鳥も、消しゴムとのキメラ体である。</p>
                 </div>
             </div>
 
@@ -278,12 +309,21 @@
 <script>
     // ▼波アニメーション
 $('#wave').wavify({
-    height: 35,
+    height: 30,
     bones: 3,
     amplitude: 20,
-    color: '#6DF0DCe1',
-    speed: .4
+    color: '#6df0dcba',
+    speed: .3
 });
+$('#wave2').wavify({
+    height: 30,
+    bones: 5,
+    amplitude: 25,
+    color: '#FC78F399',
+    speed: .5
+});
+
+
 </script>
 
 </body>
