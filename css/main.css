@@ -196,7 +196,7 @@ h2.palette {
 }
 .wd-bottom {
   width: 23em;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   background-color: #e6e6e6b1;
   border-right: solid 2px #0011ff;
   border-bottom: solid 2px #0011ff;
