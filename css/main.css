@@ -555,7 +555,7 @@ section.profile h2 {
   font-size: 11px;
 }
 div.sns {
-  align-items: center;
+  /* align-items: center; */
   margin-top: 2em;
   margin-bottom: 1em;
 }
@@ -617,6 +617,25 @@ div.sns-txt {
   text-align: center;
 }
 
+.top-link-box a {
+  /* font-weight: bold; */
+  display: block;
+  padding: 2px 1em 3px;
+  background-color: #fff;
+  color: #0011ff;
+  border-left: #fff 2px solid;
+  border-top: #fff 2px solid;
+  border-right: #333 2px solid;
+  border-bottom: #333 2px solid;
+}
+.top-link-box a:hover {
+  border-left: #333 2px solid;
+  border-top: #333 2px solid;
+  border-right: #fff 2px solid;
+  border-bottom: #fff 2px solid;
+  color: #6DF0DC;
+  background-color: #FC78F3;
+}
 
 
 /* Linkページ設定 */
@@ -649,7 +668,7 @@ div.sns-txt {
 div.bkm {
   position: relative;
   z-index: 50;
-  margin-top: 2em;
+  margin: 2em auto 3em;
   width: 23em;
 }
 .bkm img {
@@ -657,6 +676,12 @@ div.bkm {
   width: 200px;
   margin-right: 1em;
   margin-bottom: 1.5em;
+}
+.search_link, .rental_link, .made_link {
+  margin-bottom: 3em;
+}
+.search_link a {
+  margin-right: 1em;
 }
 .th-sozai p,.th-sozai a {
   display: block;
@@ -710,7 +735,7 @@ div.clapbox {
   width: fit-content;
   height: fit-content;
   padding-right: 2em;
-  margin: 3em auto 3em;
+  margin: 3em auto 1em;
 }
 a.claphand:hover, a.diary:hover {
   color: #fff;
@@ -768,6 +793,7 @@ a.diary img {
 .diary img:hover {
   content: url("../img/diary2.gif");
 }}
+
 
 .dummy-text {
   display: none;
