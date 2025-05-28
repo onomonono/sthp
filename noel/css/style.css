@@ -1,0 +1,729 @@
+﻿@charset "utf-8";
+
+/*
+本テンプレートのクレジット表示（削除不可）
+Template Name: Noël
+Author: ASA
+Version: 1.0.1
+License URI: https://oshaten10.com/
+*/
+
+/* -----------------------------------------------------------------------
+reset
+---------------------------------------------------------------------- */
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* -----------------------------------------------------------------------
+page design
+---------------------------------------------------------------------- */
+body {
+    font-family: "Montserrat", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--color-text);
+    background-color: var(--color-wh);
+    letter-spacing: .1em;
+    text-align: justify;
+}
+
+/* general params-------------------- */
+section *:first-child {
+    margin-top: 0;
+}
+
+section *:last-child {
+    margin-bottom: 0;
+}
+
+/* parts-------------------- */
+a:link,
+a:visited {
+    color: var(--color-accent);
+    transition: 0.3s;
+    /* マウスホバー時のアニメーション */
+}
+
+a:hover {
+    color: var(--color-accent2);
+}
+
+a img {
+    transition: 0.3s;
+    /* マウスホバー時のアニメーション */
+}
+
+a img:hover {
+    opacity: 0.5;
+    /* マウスホバー時に半透明に */
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 2rem 0 1rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    color: var(--color-wh);
+    text-shadow: 1px 1px 0 var(--color-text), -1px -1px 0 var(--color-text),
+        -1px 1px 0 var(--color-text), 1px -1px 0 var(--color-text),
+        0px 1px 0 var(--color-text), 0-1px 0 var(--color-text),
+        -1px 0 0 var(--color-text), 1px 0 0 var(--color-text);
+}
+
+h4 {
+    font-size: 20px;
+    color: var(--color-accent2);
+}
+
+h5 {
+    font-size: 18px;
+    color: var(--color-accent2);
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-grey);
+    border-bottom: none !important;
+    margin: 32px auto;
+}
+
+table {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 1px solid var(--color-grey);
+}
+
+th,
+td {
+    margin: 0;
+    overflow: visible;
+    padding: 8px;
+    border: 0;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+table tbody>tr:nth-child(odd)>td {
+    background-color: var(--color-pale);
+}
+
+table td:first-child {
+    width: 30%;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+    vertical-align: top;
+}
+
+ul,
+ol {
+    padding-left: 1rem;
+    margin-bottom: 16px;
+}
+
+/* スクロールバー-------------------- */
+/* スクロールバーの幅 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* スクロールバー全体の背景 */
+::-webkit-scrollbar-track {
+    background: var(--color-wh);
+}
+
+/* スクロールバーの動く部分 */
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent2);
+    border: none;
+    border-radius: 999px;
+}
+
+/* wrap-------------------- */
+.wrap {
+    background-color: var(--color-base);
+}
+
+/* layout-------------------- */
+header,
+.cnt,
+footer {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    background-color: var(--color-wh);
+}
+
+/* header-------------------- */
+header {
+    position: relative;
+    border-right: 1px var(--color-frame) solid;
+    border-left: 1px var(--color-frame) solid;
+    border-bottom: 1px var(--color-frame) solid;
+}
+
+header .sitename {
+    padding: 8px 16px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* PC版ナビゲーションメニュー */
+header .pcmenu {
+    position: fixed;
+    left: calc((100vw - 390px)/2 + 390px + 5.29vw);
+}
+
+/* 「MUNU」の見出し */
+header .pcmenu .gnav-name {
+    margin-bottom: 16px;
+    color: var(--color-wh);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ナビゲーションのデザイン */
+header .pcmenu ul.gnav-pc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .pcmenu ul.gnav-pc li {
+    margin-bottom: 16px;
+}
+
+header .pcmenu ul.gnav-pc li:before {
+    content: "";
+    display: inline-block;
+    background-image: var(--icn-marker);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: sub;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+header .pcmenu ul.gnav-pc li a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+header .pcmenu ul.gnav-pc li a:hover {
+    color: var(--color-wh);
+    opacity: 1;
+}
+
+/* スマホ版ナビゲーションメニュー */
+/* 表示の処理 */
+header .spmenu {
+    display: none;
+    /* PCの時は非表示 */
+    position: fixed;
+    top: 4px;
+    right: 26px;
+    z-index: 9998;
+}
+
+header .spmenu .gnav-sp {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: -120%;
+    /* はじめは欄外に */
+    width: 100%;
+    height: 100vh;
+    /* ナビの高さ */
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.6s;
+    /* 動き */
+}
+
+/* 「MENU」の見出し */
+header .spmenu .gnav-name {
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ナビゲーションのデザイン */
+header .spmenu .gnav-sp ul.gnav-sp-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .spmenu ul.gnav-sp-list li {
+    margin-bottom: 16px;
+}
+
+header .spmenu ul.gnav-sp-list li:before {
+    content: "";
+    display: inline-block;
+    background-image: var(--icn-marker2);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: sub;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+header .spmenu ul.gnav-sp-list li a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-accent2);
+    text-decoration: none;
+}
+
+/* アクティブクラスがついた時の処理 */
+.spmenu .gnav-sp.panelactive {
+    right: 0;
+}
+
+/* ナビゲーションボタンの処理 */
+.openbtn {
+    position: relative;
+    z-index: 9999;
+    /* ボタンを最前面に */
+    cursor: pointer;
+    width: 32px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.openbtn span {
+    /* ×に変化 */
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    height: 1px;
+    background-color: var(--color-text);
+    ;
+    width: 100%;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 0;
+    transform: translateY(6px) rotate(-45deg);
+    width: 100%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 0px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 100%;
+}
+
+/* ヘッダー・フッターのサイト名のリンク-------------------- */
+.sitename a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.sitename a:hover {
+    color: var(--color-accent);
+}
+
+/* cnt-------------------- */
+.cnt {
+    border-left: 1px var(--color-frame) solid;
+    border-right: 1px var(--color-frame) solid;
+}
+
+.cnt section {
+    padding: 40px 16px;
+    border-bottom: 1px var(--color-frame) solid;
+}
+
+.cnt section:last-child {
+    border-bottom: none;
+}
+
+/* キャプション-------------------- */
+.caption {
+    padding: 8px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    background-color: var(--color-pale);
+}
+
+/* キャプションつきのテキストリスト-------------------- */
+ul.cap-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.cap-list li {
+    margin-bottom: 1rem;
+}
+
+ul.cap-list li:before {
+    content: "";
+    display: inline-block;
+    background-image: var(--icn-marker2);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: sub;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+ul.cap-list li a {
+    font-size: 15px;
+}
+
+ul.cap-list .caption {
+    margin-top: 0.3rem;
+}
+
+/* ギャラリー-------------------- */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 1frが増えると列が増えます */
+    gap: 4px;
+}
+
+/* プロフィール-------------------- */
+.profile_box {
+    padding: 40px;
+    background-color: var(--color-pale);
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.prf_icn {
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    border-radius: 56px;
+    border: 4px var(--color-wh) solid;
+}
+
+.prf_hdr {
+    margin: 1rem 0;
+    font-size: 24px;
+    color: var(--color-wh);
+    text-shadow: 1px 1px 0 var(--color-text), -1px -1px 0 var(--color-text),
+        -1px 1px 0 var(--color-text), 1px -1px 0 var(--color-text),
+        0px 1px 0 var(--color-text), 0-1px 0 var(--color-text),
+        -1px 0 0 var(--color-text), 1px 0 0 var(--color-text);
+    text-align: center;
+}
+
+.prf_name {
+    margin-top: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+ul.prf_sns {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+ul.prf_sns li img {
+    width: 40px;
+}
+
+/* 更新履歴-------------------- */
+.news_box {
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid var(--color-pale);
+}
+
+ul.news_list {
+    padding: 0;
+}
+
+ul.news_list li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 4px 0;
+    font-size: 0.9em;
+    line-height: 1.3;
+}
+
+ul.news_list li span {
+    width: 70px;
+    margin-right: 8px;
+    padding: 2px 4px;
+    font-size: 0.8em;
+    background-color: var(--color-pale);
+}
+
+/* スクロールバー-------------------- */
+/* スクロールバーの幅 */
+.news_box::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* スクロールバー全体の背景 */
+.news_box::-webkit-scrollbar-track {
+    background: var(--color-pale);
+}
+
+/* スクロールバーの動く部分 */
+.news_box::-webkit-scrollbar-thumb {
+    background: var(--color-base);
+}
+
+/* リンクボタン-------------------- */
+.btn a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 40px 8px 16px;
+    border-radius: 40px;
+    color: var(--color-wh);
+    text-align: center;
+    line-height: 1.4;
+    text-decoration: none;
+    background-color: var(--color-accent);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn a::before,
+.btn a::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.btn a::before {
+    right: 16px;
+    width: 10px;
+    height: 1px;
+    background: var(--color-wh);
+}
+
+.btn a::after {
+    right: 16px;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid var(--color-wh);
+    border-right: 1px solid var(--color-wh);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn a:hover {
+    background-color: var(--color-accent2);
+}
+
+/* form setting--------------------*/
+input,
+textarea,
+select,
+optgroup,
+option,
+button {
+    font: inherit;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    margin-bottom: 16px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+    background-color: var(--color-pale);
+    border: 1px solid var(--color-grey);
+    border-radius: 3px;
+}
+
+span.form-required {
+    color: var(--color-accent);
+}
+
+button {
+    padding: 4px 16px;
+    border-radius: 40px;
+    color: var(--color-wh);
+    letter-spacing: .1em;
+    background-color: var(--color-accent);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 文章中のアイコン設定-------------------- */
+.icn_position {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+/* footer-------------------- */
+footer {
+    padding: 16px;
+    text-align: center;
+    border-top: 1px var(--color-frame) solid;
+    border-right: 1px var(--color-frame) solid;
+    border-left: 1px var(--color-frame) solid;
+}
+
+footer .sitename {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+footer .sitename:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: var(--color-base);
+    border-radius: 2px;
+}
+
+footer .copyright {
+    font-size: 10px;
+    color: var(--color-text);
+}
+
+/* -----------------------------------------------------------------------
+スマホ用の処理
+---------------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+    /* ←←←消さないよう注意！ */
+
+    /* wrap-------------------- */
+    .wrap {
+        padding: 0 10px;
+    }
+
+    /* スマホでタップ時に半透明にならないようにする-------------------- */
+    a:hover {
+        opacity: 1;
+    }
+
+    /* ナビゲーションメニュー-------------------- */
+    header .pcmenu {
+        display: none;
+        /* PCの時は非表示 */
+    }
+
+    header .spmenu {
+        display: block;
+        /* スマホの時は表示 */
+    }
+
+}
+
+/* ←←←消さないよう注意！ */
+/* -----------------------------------------------------------------------
+スマホ用の処理ここまで
+---------------------------------------------------------------------- */

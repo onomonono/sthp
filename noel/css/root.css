@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*-----------------------------------------------------------------------
+root
+----------------------------------------------------------------------*/
+
+:root {
+  --color-text: #464646;/* フォントの色 */
+  --color-base: #edb5b5;/* 背景色 */
+  --color-pale: #e8e0e8;/* tableの背景色など */
+  --color-accent: #f0616e;/* 強調色1。リンクの色など */
+  --color-accent2: #a790bf;/* 強調色2。文章内の強調箇所など */
+  --color-wh: #fff;
+  --color-grey: #999;
+  --color-mgrey: #dddddd;
+  --color-lgrey: #f0f0f0;
+  --color-frame: #2f2c23;/* 外枠の線の色 */
+  --icn-marker: url(../img/icn_star_wh.png);/* マーカーのアイコン画像 */
+  --icn-marker2: url(../img/icn_star_grey.png);/* マーカーのアイコン画像 */
+}
+
+
+
+
+
