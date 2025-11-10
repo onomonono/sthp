@@ -133,7 +133,6 @@ h2.palette {
   background-repeat: no-repeat;
 }
 
-
 .txt-center {
   text-align: center;
 }
@@ -646,30 +645,17 @@ div.sns-txt {
   width: 23em;
   color: #fff;
 }
-.bookmark h3 {
-  font-size: large;
-  z-index: 10;
-  display: block;
-  position: relative;
-  width: fit-content;
-  margin: 0 auto 1em;
-  padding: 0 5px;
-  background-color: #414BDE;
-}
-.h3_line {
-  z-index: -1;
-  top: -1.9em;
-  width: 23em;
-  height: auto;
-  position: relative;
-  border-bottom: #fff 2px dotted;
-}
+
 
 div.bkm {
   position: relative;
   z-index: 50;
   margin: 2em auto 3em;
   width: 23em;
+}
+.bkm .container p {
+  font-size: 12px;
+  line-height: 1.8em;
 }
 .bkm img {
   height: 40px;
@@ -683,19 +669,21 @@ div.bkm {
 .search_link a {
   margin-right: 1em;
 }
-.th-sozai p,.th-sozai a {
+.txt_link p,.txt_link a {
   display: block;
   font-size: small;
   width: fit-content;
 }
-.th-sozai a {
+.txt_link a {
+  line-height: 1.2em;
+  font-size: medium;
   font-weight: 500;
-  padding: 0 0.5em;
-  margin-bottom: 1em;
+  padding: 0 0.3em;
+  margin-bottom: 0.8em;
   color: #ff26f1;
   background-color: #6DF0DC;
 }
-.th-sozai a:hover {
+.txt_link a:hover {
   color: #6DF0DC;
   background-color: #ff26f1;
 }
@@ -706,6 +694,7 @@ div.bkm {
 }
 .mylink .wd-bottom p {
   color: #414BDE;
+  line-height: 1.8em;
 }
 .mylink .wd-bottom h4 {
   margin-top: 1em;
@@ -716,21 +705,13 @@ div.bkm {
   text-align: center;
 }
 
-/* clapページ設定 */
-div.thank-message {
-  text-align: center;
-  width: fit-content;
-}
-.thank-message p {
-  margin: 1em auto 0;
-  width: fit-content;
+/* offlineページ設定 */
+.event, .books {
+  width: 23em;
   color: #fff;
 }
-.thank-message img {
-  height: 500px;
-  width: 500px;
-}
 
+/* clapボタン設定 */
 div.clapbox {
   width: fit-content;
   height: fit-content;
@@ -984,6 +965,26 @@ a:hover {
   border-top: solid 2px #4d4d4d;
   transition-duration: unset;
 }
+h3.mid_h3 {
+  text-align: center;
+  /* font-size: large; */
+  z-index: 10;
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 1em;
+  padding: 0 5px;
+  background-color: #414BDE;
+}
+.h3_line {
+  z-index: -1;
+  top: -1.9em;
+  width: 23em;
+  height: auto;
+  position: relative;
+  border-bottom: #fff 2px dotted;
+}
+
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
