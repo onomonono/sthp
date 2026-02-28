@@ -41,7 +41,19 @@ h2.palette {
 }
 .wd-bottom h5::after {
     margin-left: 3em;
-    width: 15em;
+    width: 20em;
+}
+.wd-bottom .date-c a {
+    font-family: "DotGothic16", sans-serif;
+    font-size: 12px;
+    padding: 0 0.5em;
+    line-height: 1.2em;
+    color: #00f;
+    background-color: #fff;
+}
+.wd-bottom .date-c a:hover {
+    color: #ff26f1;
+    background-color: #6DF0DC;
 }
 
 .about h2.palette {
